@@ -17,198 +17,153 @@
         <link rel="stylesheet" href="plugin/chalkboard/style.css" />
         <link rel="stylesheet" href="plugin/customcontrols/style.css" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .btn-resetted {
+                all: unset !important;
+            }
+
+            .btn {
+                background-color: #8b8dff;
+                color: #000000;
+                padding: 1rem 2rem;
+                justify-self: center;
+                align-self: center;
+                margin-top: 2rem;
+                border-radius: 1rem;
+                border: solid 2px black;
+            }
+        </style>
     </head>
 
     <body>
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
+                    <h1>
+                        Использование языка разметки как структуры для данных
+                    </h1>
+                    <h4>Кутиков Павел Алекссевич</h4>
                 </section>
                 <section>
                     <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
+                        <h1>Три столпа веб разработки</h1>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="border-b">
+                                <h4>HTML</h4>
+                                <div>фундамент и стены</div>
                             </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
+                            <div class="border-b">
+                                <h4>CSS</h4>
+                                <div>дизайн и интерьер</div>
                             </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
+                            <div class="border-b">
+                                <h4>JavaScript</h4>
+                                <div>электричество и умная техника</div>
                             </div>
                         </div>
                     </section>
                     <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
+                        <h1>HTML</h1>
                         <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
+                            Язык разметки, который предстовляет
+                            <em>скелет страницы</em>
+                        </p>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="border-b">
+                                <h3>HTML элемент</h3>
+                                <h4>Кнопка</h4>
+                                <button class="btn-resetted">Войти</button>
+                            </div>
+                            <div class="border-b">
+                                <h3>CSS</h3>
+                                <h4>Цвет, шрифт</h4>
+                                <button class="btn">Войти</button>
+                            </div>
+                            <div class="border-b">
+                                <h3>JavaScript</h3>
+                                <h4>Что происходит когда нажимете</h4>
+                                <button id="btn-example" class="btn">
+                                    Войти
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>HTML тэг</h1>
+                        <p>определяет как рисовать контент на странице</p>
+                        <pre><code data-trim class="html">
+&lt;p&gt;
+    Содержимое
+&lt;/p&gt;
+                        </code></pre>
+                        <p>Выглядит как слово в угловых скобках:</p>
+                        <p>
+                            <el>
+                                <code>
+                                    знак-меньше название-тега знак-больше
+                                </code>
+                            </el>
                         </p>
                     </section>
+                    <section>
+                        <h1>HTML тэг</h1>
+                        <h3>Открывающий/закрывающий тэг</h3>
+                        <p>Как отображается на экране</p>
+                        <pre><code data-line-numbers="1,3" data-trim class="html">
+&lt;p&gt;
+    Содержимое
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>HTML тэг</h1>
+                        <h3>Контент</h3>
+                        <p>Что изображается на экране</p>
+                        <pre><code data-line-numbers="2" data-trim class="html">
+&lt;p&gt;
+    Содержимое
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Семантика</h1>
+                        <div>
+                            <em>Семантика = Смысл</em>
+                        </div>
+                        <br />
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-g">
+                                <h3>Хорошо</h3>
+                                <h4>Смысловой тег</h4>
+                                <code>&lt;header&gt;</code>
+                                ,
+                                <code>&lt;nav&gt;</code>
+                                ,
+                                <code>&lt;main&gt;</code>
+                                ,
+                                <code>&lt;footer&gt;</code>
+                            </div>
+                            <div class="border-r">
+                                <h3>Плохо</h3>
+                                <h4>Общий тег</h4>
+                                <code>&lt;div&gt;</code>
+                                ,
+                                <code>&lt;span&gt;</code>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
-                    <img
-                        class="r-stretch"
-                        src="https://goqr.me/"
-                        data-type="qrcode" />
-                </section>
-                <section>
-                    <h1>New changes on the way!</h1>
-                </section>
+                <section><h1>А теперь к коду!</h1></section>
             </div>
         </div>
+        <script>
+            const button = document.querySelector('#btn-example')
+            button.addEventListener('click', () => {
+                alert('Вы пытаетесь войти')
+            })
+        </script>
 
         <script src="dist/reveal.js"></script>
         <script src="plugin/notes/notes.js"></script>
@@ -396,4 +351,3 @@ var foo = {
         </script>
     </body>
 </html>
-
