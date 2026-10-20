@@ -39,9 +39,7 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>
-                        Использование языка разметки как структуры для данных
-                    </h1>
+                    <h1>CSS - стилизация веб-контента</h1>
                     <h4>Кутиков Павел Алекссевич</h4>
                 </section>
                 <section>
@@ -128,30 +126,46 @@
                         </code></pre>
                     </section>
                     <section>
-                        <h1>Семантика</h1>
+                        <h1>HTML атрибуты</h1>
+                        <h3>Настройка</h3>
+                        <p>Позволяет изменять HTML тэги</p>
+                        <pre><code data-line-numbers="2-3" data-trim class="html">
+&lt;img
+    src="https://..."
+    class="image"
+&gt;
+    Содержимое
+&lt;/img&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>CSS</h1>
+                        <h3>Как выглядят элементы</h3>
+                        <p>Позволяет изменять цвет, расположение, шрифт</p>
+                        <pre><code data-trim class="css">
+h1 {
+  color: tomato;
+  font-size: 40px;
+}
+                        </code></pre>
                         <div>
-                            <em>Семантика = Смысл</em>
+                            Правила применяются к определенному элементу
                         </div>
-                        <br />
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="border-g">
-                                <h3>Хорошо</h3>
-                                <h4>Смысловой тег</h4>
-                                <code>&lt;header&gt;</code>
-                                ,
-                                <code>&lt;nav&gt;</code>
-                                ,
-                                <code>&lt;main&gt;</code>
-                                ,
-                                <code>&lt;footer&gt;</code>
-                            </div>
-                            <div class="border-r">
-                                <h3>Плохо</h3>
-                                <h4>Общий тег</h4>
-                                <code>&lt;div&gt;</code>
-                                ,
-                                <code>&lt;span&gt;</code>
-                            </div>
+                    </section>
+                    <section>
+                        <h1>CSS свойства</h1>
+                        <h3>Что настраиваем</h3>
+                        <p>Позволяет изменять цвет, расположение, шрифт</p>
+                        <pre><code data-line-numbers="2-3" data-trim class="css">
+h1 {
+  color: tomato;
+  font-size: 40px;
+}
+                        </code></pre>
+                        <div>
+                            <em>
+                                Ключ и значение разделяются <code>:</code>, а в конце каждой строчки ставится <code>;</code>
+                            </em>
                         </div>
                     </section>
                 </section>
